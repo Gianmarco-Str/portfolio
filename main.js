@@ -1,4 +1,3 @@
-import "./style.css";
 import * as THREE from "three";
 import gsap from "gsap";
 // https://greensock.com/docs/v3/Plugins/ScrollTrigger
