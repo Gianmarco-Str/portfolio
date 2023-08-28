@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Inter&display=swap" rel="stylesheet">
+    <title>Gianmarco Stramaglia</title>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <div class="container">
+
+      <div class="hero-section">
+        <div>
+          <div class="top-hero-section">
+            <a class="mailto-link" href="mailto:g.stramaglia@outlook.it">
+              <button class="contact-button">CONTACT ME</button>
+            </a>
+          </div>
+          <h1 class="title">PORTFOLIO</h1>
+          <div class="undertext">
+            <h2 class="name">GIANMARCO STRAMAGLIA,</h2>
+            <h2 class="profession">FRONT-END DEVELOPER</h2>
+          </div>
+          <img class="lines-stars" src="./images/lines-stars.svg"/>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="work-title">
+          <img class="star" src="./images/star.svg"/>
+          <h2>THINGS I'VE BUILT</h2>
+        </div>
+        <img class="ovals" src="./images/ovals.svg"/>
+        <div class="work-thumbnail-container">
+          <div class="work-thumbnail">
+            <h2>BLACK JACK</h2>
+            <div onclick="openProjectLink(0)" class="work-one"></div>
+          </div>
+          <div class="work-thumbnail">
+            <h2>WHITE NOISE APP</h2>
+            <div onclick="openProjectLink(1)" class="work-two"></div>
+          </div>
+          <div class="work-thumbnail">
+            <h2>COLOR SCHEME GENERATOR</h2>
+            <div onclick="openProjectLink(2)" class="work-three"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form" id="contact-form">
+        <div class="intro-section">
+            <img class="star" src="./images/star.svg"/>
+            <h2>CONTACT ME</h2>
+            <div class="divider"></div>
+        </div>
+        <form action="https://formspree.io/f/xyyajwbg" method="POST">
+            <div class="text-input-container">
+                <div class="text-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <div class="text-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea><br/>
+          
+            <button class="send-btn">SEND</button>
+        </form>
+    </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script>
+      const projectsArr = ["Black-Jack","White-Noise-App","Color-Scheme-Generator"]
+
+      function openProjectLink(i) {
+          window.open(`https://gianmarco-str.github.io/${projectsArr[i]}/`)
+      }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffb24e;
+  font-family: 'Inder', sans-serif;
+  font-weight: 300;
+}
+
+html,
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #ffb24e;
+  --secondary-color: #FD3789;
+}
+
+h1,
+h2,
+h3,
+p {
+  pointer-events: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.mailto-link {
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 15px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.top-hero-section {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-button,
+.send-btn {
+  background: var(--main-color);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: .4em .8em;
+  transition: 0.2s;
+  color: black;
+  box-shadow: -6px 6px 0 var(--secondary-color);
+}
+
+.contact-button:focus,
+.contact-button:hover,
+.send-btn:focus,
+.send-btn:hover {
+  transform: translate(-5px, 5px);
+  box-shadow: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 18vw;
+  text-shadow: -3px 3px 0 var(--secondary-color);
+}
+
+.undertext {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.name {
+  font-size: 6vw;
+  letter-spacing: 2px;
+}
+
+.profession { 
+  font-size: 5vw;
+  letter-spacing: 2px;
+}
+
+.lines-stars {
+  width: 125%;
+  max-width: 2000px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+  top: 37vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+
+/* WORK */
+
+.work {
+  margin: 200px 0;
+}
+
+.work-title,
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.work-title {
+  margin-bottom: 150px;
+}
+
+.work-title h2,
+.intro-section h2  {
+  font-size: 8vw;
+}
+
+.star {
+  width: 6vw;
+  margin-right: 20px;
+}
+
+.ovals {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  left: 50%;
+  width: 850px;
+  transform: translate(-50%, 0);
+}
+
+.work-thumbnail-container {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-thumbnail h2 {
+  font-size: 1.9rem;
+}
+
+.work-thumbnail div {
+  max-width: 450px;
+  width: 85vw;
+  height: 180px;
+  margin-bottom: 50px;
+  border: 2px solid #801441;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  transition: border 0.5s ease ;
+}
+
+.work-thumbnail div:hover {
+  border: 5px solid var(--secondary-color);
+}
+
+.work-one {
+  background-image: url("./images/blackjack-preview.png");
+}
+
+.work-two {
+  background-image: url("./images/white-noise-app-preview.png");
+}
+
+.work-three {
+  background-image: url("./images/color-scheme-app.png");
+}
+
+.work-thumbnail:nth-of-type(2) {
+  align-self: center;
+}
+
+.work-thumbnail:nth-of-type(3) {
+  align-self: flex-end;
+  margin: 0;
+} 
+
+
+/* CONTACT FORM */
+
+.contact-form {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.intro-section {
+  margin-bottom: 50px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  margin: .3rem 0 1em 0; 
+  background-color: #491028;
+  font-size: 1rem;
+  padding: 0 .7em;
+  box-sizing: border-box;
+  color: wheat;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 0.1px solid var(--secondary-color);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px #2e3131 inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.contact-form input {
+  height: 40px;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  padding-top: .3em;
+}
+
+.send-btn {
+  margin: 2em 0 7em 0;
+}
+
+@media (min-width: 720px) {
+  .hero-section {
+    padding-bottom: 100px;
+  }
+
+  .contact-button,
+  .send-btn {
+    font-size: 1.2rem;
+  } 
+
+  .title {
+    text-shadow: -6px 6px 0 var(--secondary-color);
+  }
+
+  .undertext {
+    width: 80%;
+    margin-top: -30px;
+  }
+
+  .name {
+    font-size: 4vw;
+    text-shadow: -2px 2px 0 var(--secondary-color);;
+  }
+
+  .profession {
+    font-size: 3.4vw;
+    text-shadow: -2px 2px 0 var(--secondary-color);;
+  }
+
+  .lines-stars {
+    width: 90%;
+    top: 45vh;
+    left: 44%;
+  }
+  
+  .intro-section {
+    margin-bottom: 100px;
+  }
+
+  .work-title {
+    margin-bottom: 200px;
+  }
+
+  .intro-section h2,
+  .work-title h2 {
+    text-shadow: -2px 2px 0 var(--secondary-color);
+    font-size: 3.8rem;
+  }
+
+  .star {
+    width: 40px;
+    margin-right: 30px;
+  }
+
+  .ovals {
+    width: 1300px;
+  }
+
+  .work-thumbnail div {
+    max-width: 700px;
+    width: 60vw;
+    height: 280px;
+    margin-bottom: 100px;
+  }
+
+  /* Contact Form */
+
+  .contact-form {
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  .text-input-container {
+      display: flex;
+      margin-bottom: 1em;
+  }
+
+  .text-input {
+      width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      font-size: 1.4rem;
+  }
+
+  .contact-form input {
+      height: 55px;
+  }
+
+  .contact-form textarea {
+      min-height: 200px;
+  }
+
+  .text-input:first-of-type {
+      padding-right: .8em;
+  }
+
+  .text-input:last-of-type {
+      padding-left: .8em;
+  }
+
+  #message {
+      padding-top: 8px;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .title {
+    font-size: 16vw;
+    text-shadow: -8px 8px 0 var(--secondary-color);
+  }
+
+  .contact-button,
+  .send-btn {
+    font-size: 1.3rem;
+  }
+
+  .undertext {
+    margin-top: -50px;
+  }
+
+  .name {
+    font-size: 3rem;
+    text-shadow: none;
+    text-shadow: -2px 2px 0 var(--secondary-color);
+  }
+
+  .profession {
+    font-size: 2.5rem;
+    text-shadow: none;
+    text-shadow: -2px 2px 0 var(--secondary-color);
+  }
+
+  .lines-stars {
+    width: 68%;
+    top: 48vh;
+    left: 41%;
+  }
+
+  .intro-section {
+    margin-bottom: 130px;
+  }
+
+  .intro-section h2,
+  .work-title h2 {
+    text-shadow: -3px 3px 0 var(--secondary-color);
+    font-size: 5.6rem;
+  }
+
+  .star {
+    width: 57px;
+    margin-right: 45px;
+  }
+}
+
+
+
