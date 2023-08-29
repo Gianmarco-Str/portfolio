@@ -1,7 +1,7 @@
-import * as THREE from "three";
-import gsap from "gsap";
+import * as THREE from "./node_modules/three/build/three.module.js";
+import gsap from "./node_modules/gsap/index.js";
 // https://greensock.com/docs/v3/Plugins/ScrollTrigger
-import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from "./node_modules/gsap/ScrollTrigger";
 
 import vertexShader from "./shaders/vertex.glsl";
 import fragmentShader from "./shaders/fragment.glsl";
@@ -127,5 +127,11 @@ window.addEventListener("resize", function () {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    //console.log(canvas.width);
 });
+
+/*window.addEventListener("load", function () {
+    if (window.innerWidth < 721) {
+        camera.fov = 10;
+        console.log(camera.fov);
+    }
+});*/

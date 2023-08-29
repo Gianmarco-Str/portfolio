@@ -10,7 +10,6 @@
 html,
 body {
   background-color: black;
-  overflow-x: hidden;
 }
 
 :root {
@@ -51,6 +50,7 @@ canvas {
 }
 
 .container {
+  overflow-x: hidden;
   position: absolute;
   width: 100%;
 }
@@ -63,7 +63,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 250px;
+  padding-bottom: 100px;
 }
 
 .top-hero-section {
@@ -121,7 +121,7 @@ canvas {
   overflow: hidden;
   pointer-events: none;
   z-index: -1;
-  top: 37vh;
+  top: 46vh;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -173,7 +173,7 @@ canvas {
 }
 
 .work-thumbnail h2 {
-  font-size: 1.9rem;
+  font-size: 1.2rem;
 }
 
 .work-thumbnail div {
@@ -249,8 +249,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
-  -webkit-box-shadow: 0 0 0 30px #2e3131 inset !important;
-  -webkit-text-fill-color: #fff !important;
+  -webkit-box-shadow: 0 0 0 30px #491028 inset !important;
+  -webkit-text-fill-color: wheat !important;
 }
 
 .contact-form input {
@@ -313,6 +313,10 @@ input:-webkit-autofill:active{
   .work-title h2 {
     text-shadow: -2px 2px 0 var(--secondary-color);
     font-size: 3.8rem;
+  }
+
+  .work-thumbnail h2 {
+    font-size: 1.9rem;
   }
 
   .star {
@@ -418,6 +422,10 @@ input:-webkit-autofill:active{
   .work-title h2 {
     text-shadow: -3px 3px 0 var(--secondary-color);
     font-size: 5.6rem;
+  }
+
+  .work-thumbnail h2 {
+    font-size: 2.1rem;
   }
 
   .star {
