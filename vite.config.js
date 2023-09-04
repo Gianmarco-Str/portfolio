@@ -1,5 +1,7 @@
 // vite.config.js
-export default {
-    // config options
-    base: "./",
-};
+import { defineConfig } from "vite";
+
+export default defineConfig({
+    base: "/portfolio/",
+    target: "static",
+});
