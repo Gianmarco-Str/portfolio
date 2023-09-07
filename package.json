@@ -15,6 +15,6 @@
     "gsap": "^3.12.2",
     "three": "^0.155.0"
   },
-  "homepage": "https://gianmarco-str.github.io/portfolio/"
+  "homepage": "."
   
 }
