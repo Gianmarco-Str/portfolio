@@ -1,5 +1,5 @@
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js";
-import { gsap } from "gsap/index.js";
+import { gsap } from "gsap";
 // https://greensock.com/docs/v3/Plugins/ScrollTrigger
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
