@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import gsap from "gsap";
+import { gsap } from "gsap/index.js";
 // https://greensock.com/docs/v3/Plugins/ScrollTrigger
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
