@@ -1,7 +1,8 @@
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js";
-import { gsap } from "gsap";
+
+/*import gsap from "gsap";
 // https://greensock.com/docs/v3/Plugins/ScrollTrigger
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";*/
 
 import vertexShader from "./shaders/vertex.glsl";
 import fragmentShader from "./shaders/fragment.glsl";
@@ -77,6 +78,7 @@ window.addEventListener("mousemove", (e) => {
     sphereMat.uniforms.lightPosition.value.set(mouse.x * 3, mouse.y * 4, 3.5);
 });
 
+/*
 // GSAP ANIMATIONS
 gsap.registerPlugin(ScrollTrigger);
 const triggerValues = {
@@ -114,7 +116,7 @@ window.onload = function () {
         delay: 0.3,
         ease: "power2.out",
     });
-};
+};*/
 
 function animate() {
     sphereMat.uniforms.time.value = clock.getElapsedTime();
